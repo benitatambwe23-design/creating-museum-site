@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Souvenir Shop</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/shop.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Museum of Cultural Memory</h1>
+  <nav>
+    <button onclick="location.href='../index.html'">Home</button>
+    <button onclick="location.href='staff.html'">Staff</button>
+    <button onclick="location.href='collections.html'">Collections</button>
+    <button onclick="location.href='shop.html'">Shop</button>
+  </nav>
+</header>
+
+<main>
+  <h2>Souvenir Shop</h2>
+
+  <p class="ai-disclaimer">
+    The content in this shop was entirely created by AI under human direction.
+  </p>
+
+  <div class="shop-container">
+
+    <!-- ITEM 1 -->
+    <div class="souvenir-item" data-id="item001">
+      <img src="../images/collections/kuba_ceremonial_mask.png"
+           alt="Kuba ceremonial mask"
+           title="Echo of ancestral spirits carved for Kuba initiation rites"
+           onclick="openModal(this)">
+
+      <h3>Kuba Mask Replica</h3>
+      <p>From the Anthropology Collection. Carved wood mask inspired by Kuba traditions, DRC.</p>
+      <p class="price">$149.00</p>
+
+      <button onclick="addToCart('item001')">
+        Add Kuba Mask Replica to Cart
+      </button>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="souvenir-item" data-id="item002">
+      <img src="../images/collections/songye_initiation_mask.png"
+           alt="Songye initiation mask"
+           title="Guardian of initiation and protection rituals"
+           onclick="openModal(this)">
+
+      <h3>Songye Mask Replica</h3>
+      <p>From the Anthropology Collection. Represents initiation and protection rituals.</p>
+      <p class="price">$179.00</p>
+
+      <button onclick="addToCart('item002')">
+        Add Songye Mask Replica to Cart
+      </button>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="souvenir-item" data-id="item003">
+      <img src="../images/collections/river_stone_cutting_tool.png"
+           alt="River stone cutting tool"
+           title="Stone shaped by daily survival along ancient riverbanks"
+           onclick="openModal(this)">
+
+      <h3>Stone Tool Replica</h3>
+      <p>From the Archaeology Collection. Inspired by riverbank tools of Central Africa.</p>
+      <p class="price">$89.00</p>
+
+      <button onclick="addToCart('item003')">
+        Add Stone Tool Replica to Cart
+      </button>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="souvenir-item" data-id="item004">
+      <img src="../images/collections/palm_stone_grinding_tool.png"
+           alt="Palm stone grinding tool"
+           title="Rhythm of daily life and shared meals"
+           onclick="openModal(this)">
+
+      <h3>Grinding Stone Replica</h3>
+      <p>From the Archaeology Collection. Daily food preparation tool.</p>
+      <p class="price">$119.00</p>
+
+      <button onclick="addToCart('item004')">
+        Add Grinding Stone Replica to Cart
+      </button>
+    </div>
+
+  </div>
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden" onclick="closeModal()">
+ <img
+  id="modal-img"
+  src="../images/collections/kuba_ceremonial_mask.png"
+  alt="Enlarged artifact image">
+</div>
+
+</body>
+</html>
