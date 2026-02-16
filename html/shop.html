@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Voices | Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/shop.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Cultural Voices</h1>
+    <nav>
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='collections.html'">Collections</button>
+        <button onclick="location.href='cart.html'">View Cart</button>
+    </nav>
+</header>
+
+<main>
+
+<h2>Souvenir Shop</h2>
+
+<p class="ai-disclaimer">
+    Artifacts inspired by global cultural heritage.
+</p>
+
+<div class="shop-container">
+
+    <!-- ITEM 1 -->
+    <div class="souvenir-item">
+        <img src="../images/collections/kuba_ceremonial_mask.png"
+             alt="Kuba ceremonial mask">
+
+        <h3>Kuba Mask Replica</h3>
+      <p>
+      From the Anthropology Collection.
+      Carved wooden ceremonial mask inspired by Kuba royal traditions
+       from the Democratic Republic of the Congo. Approximately 45 cm tall,
+       hand-painted with geometric motifs symbolizing leadership and identity.
+       Traditionally used in royal ceremonies and cultural celebrations.
+      Likely functioned as a symbol of authority and ancestral connection.
+</p>
+        <p>$149.00</p>
+
+        <button
+            onclick="addToCart(this)"
+            data-id="item001"
+            data-name="Kuba Mask Replica"
+            data-price="149.00"
+            data-image="../images/collections/kuba_ceremonial_mask.png">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- ITEM 2 -->
+   <div class="souvenir-item">
+
+    <img src="../images/collections/songye_initiation_mask.png"
+         alt="Songye initiation mask">
+
+    <h3>Songye Mask Replica</h3>
+    <p>
+From the Anthropology Collection.
+Carved wooden initiation mask inspired by the Songye people
+of Central Africa. Approximately 38 cm tall, featuring linear
+carved patterns and symbolic facial structure. Traditionally
+used in initiation and protection rituals within the community.
+Likely represented spiritual guardianship and social transformation.
+</p>
+    <p>$179.00</p>
+
+    <button
+        onclick="addToCart(this)"
+        data-id="item002"
+        data-name="Songye Mask Replica"
+        data-price="179.00"
+        data-image="../images/collections/songye_initiation_mask.png">
+        Add to Cart
+    </button>
+
+   </div>
+
+    <!-- ITEM 3 -->
+    <div class="souvenir-item">
+        <img src="../images/collections/river_stone_cutting_tool.png"
+             alt="Stone cutting tool">
+
+        <h3>Stone Tool Replica</h3>
+        <p>
+From the Archaeology Collection.
+Replica of a prehistoric river stone cutting tool made from
+polished basalt. Approximately 12 cm in diameter, mounted
+on a display base. Inspired by early survival tools used
+along Central African riverbanks. Likely used for cutting,
+scraping, and preparing materials in daily life.
+</p>
+        <p>$89.00</p>
+
+        <button
+            onclick="addToCart(this)"
+            data-id="item003"
+            data-name="Stone Tool Replica"
+            data-price="89.00"
+            data-image="../images/collections/river_stone_cutting_tool.png">
+            Add to Cart
+        </button>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="souvenir-item">
+        <img src="../images/collections/palm_stone_grinding_tool.png"
+             alt="Grinding stone tool">
+
+        <h3>Grinding Stone Replica</h3>
+        <p>
+From the Archaeology Collection.
+Replica of a traditional palm grinding stone carved from
+granite. Approximately 20 cm wide with a central bowl and
+grinding pestle. Inspired by daily food preparation tools
+used in communal settings. Likely functioned as a grain
+processing and shared meal preparation platform.
+</p>
+        <p>$119.00</p>
+
+        <button
+            onclick="addToCart(this)"
+            data-id="item004"
+            data-name="Grinding Stone Replica"
+            data-price="119.00"
+            data-image="../images/collections/palm_stone_grinding_tool.png">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+</main>
+
+</body>
+</html>
