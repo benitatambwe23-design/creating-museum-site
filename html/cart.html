@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Shopping Cart</h1>
+
+<nav>
+<button onclick="location.href='../index.html'">Home</button>
+<button onclick="location.href='collections.html'">Collections</button>
+<button onclick="location.href='shop.html'">Shop</button>
+</nav>
+
+</header>
+
+<main>
+
+<h2>Your Cart Summary</h2>
+
+<label>
+<input type="checkbox" id="memberDiscount">
+Member Discount (15%)
+</label>
+
+<div id="cartContainer"></div>
+
+<div class="cart-buttons">
+<button id="clearCart">Clear Cart</button>
+<button onclick="location.href='shop.html'">Keep Shopping</button>
+</div>
+
+</main>
+
+<script src="../js/cart.js" defer></script>
+
+</body>
+</html>
